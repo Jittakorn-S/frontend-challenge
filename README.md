@@ -1,28 +1,23 @@
 # Frontend Challenge
 
 ## Overview
-Create a responsive weather application that allows users to search for cities and view current weather conditions. The app should feature a search box with suggestions, a list of selected cities with current temperatures, and detailed weather information for each city. Users should be able to configure the temperature unit system (Kelvin, Fahrenheit, Celsius).
+Create a responsive weather application that allows users to search for cities and view current weather conditions. The app should feature a search box with suggestions, and detailed weather information for selected city in Celsius degree.
 
 # Design Guideline
 This is just a guideline. You can adjust or totally redesign it as you see fit.
 
-![example](https://github.com/factory-talk/frontend-challenge/assets/120702073/d937815c-b452-4e9c-8a7f-a6fcf1daab0d)
+![image](https://github.com/user-attachments/assets/fc595e44-396e-4108-83a4-0a39f2b2c47c)
+
+
 
 # Features
-## Index Page
+## Main Page
+Have 2 main components:
 - Search Box: Allows users to search for cities by name or ZIP code
-    - Provides a suggestion list as the user types.
-- City List: Display a list of cities selected by the user alont with the current time and average temperature.
-    - User can manage the list by adding or removing cities.
-
-## Search Page
-- Auto-Suggestions: When typing in the search box, display a list of suggested cities based on the input.
-- City Selection: Allows user to select a city from the suggestion list to add to their index.
-
-## Detail Page
-- City Weather Details: Display detailed weather information for the selected city, including:
-    - Average Temperature
-    - Minimum and Maximum Temperature
+    - Auto-Suggestions: When typing in the search box, display a list of suggested cities based on the input.
+- Selected City Weather Details: Display detailed weather information for the selected city, including:
+    - Average Temperature (in Celsius)
+    - Minimum and Maximum Temperature (in Celsius)
     - Weather Icon
     - Main Weather (e.g., Rain, Snow, Sunny)
     - Weather Description
@@ -30,12 +25,11 @@ This is just a guideline. You can adjust or totally redesign it as you see fit.
     - Humidity
     - Pressure
     - Rain Volume
-- 24-Hour Forecast: Show a forecast for the next 24 hours, including temperature and weather conditions.
+- 24-Hour Forecast: Show a forecast for the next 24 hours, including temperature and weather conditions
+- Show local date and time of the user: Display the current date and time for each city in the list.
 
 ## Additional Features
-- Temperature Unit Configuration: Allow users to select their preferred temperature unit (Kelvin, Fahrenheit, Celsius).
 - Responsive Design: Ensure the application is responsive and works well on various device sizes.
-- Current Date and Time: Display the current date and time for each city in the list.
 
 ## Technology Stack
 - Use Next.js or React.js for building the user interface.
@@ -49,10 +43,10 @@ This is just a guideline. You can adjust or totally redesign it as you see fit.
 https://openweathermap.org/api
 ### Weather icons
 https://openweathermap.org/weather-conditions
-### Places API
-https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/
+### Search by city name API
+https://openweathermap.org/api/geocoding-api
 
-You can choose any Places API as your datasource.
+You can also choose any other aternative API as your datasource.
 
 
 ## Submission
